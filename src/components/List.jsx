@@ -16,8 +16,8 @@ const List = () =>{
 
         {
             "id": "02",
-            "nome": "suino",
-            "sobrenome":"rocha"
+            "nome": "Onias",
+            "sobrenome":"Rocha"
         }
     ])
 
