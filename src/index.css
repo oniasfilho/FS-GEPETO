@@ -11,9 +11,9 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    height: 80vh;
     max-width:900px ;
     min-width:900px ;
+    min-height: 80vh;
     transform: translate(-50%, -50%);
 }
 

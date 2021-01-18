@@ -1,5 +1,8 @@
-import {React, useState} from 'react';
+import {React, useContext, useState} from 'react';
+import { StateContext } from './StateContext';
 import { Table } from "react-bootstrap";
+
+
 
 
 const List = () =>{
@@ -18,7 +21,7 @@ const List = () =>{
         }
     ])
 
-    const [input, setInput] = useState("vai ficar aqui");
+    const [usuario] = useContext(StateContext);
 
     return(
 
@@ -63,7 +66,7 @@ const List = () =>{
                     )
                 })}
 
-                <input type="text" value={input} disabled />
+                <input type="text" value={usuario.nome} disabled />
 
             </tbody>
         </Table>

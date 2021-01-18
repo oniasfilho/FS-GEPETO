@@ -1,3 +1,4 @@
+import {StateProvider} from './StateContext';
 import Header from './Header';
 import Cadastro from './Cadastro';
 import List from './List';
@@ -8,8 +9,10 @@ function App() {
   return (
     <div className="App">     
       {/* <Header></Header> */}
-      <Cadastro/>
-      <List/>
+      <StateProvider>
+        <Cadastro/>
+        <List/>
+      </StateProvider>
       {/* <Footer></Footer> */}
     </div>
   );
